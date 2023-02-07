@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    font-family: Quicksilver;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+body,
+header,
+nav {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+
+header {
+    background-image: url("images/sw_logo_background.jpeg");
+    width: 100vw;
+    min-height: 10vh;
+    padding: 1rem;
+}
+
+/* ---------- NAVIGATION BAR & MENU ---------- */
+
+.navbar,
+.navbar-nav {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: stretch;
+    background: rgb(250, 203, 14);  
+}
+
+.nav-item,
+.nav-link {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    color: black;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: stretch;
+}
+
+/* ---------- MAIN BODY ---------- */
+
+main {
+    padding: 1rem;
+    margin: 0;
+    width: 100vw;
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto min-content auto;
+    grid-template-areas:
+        "mainList subList subList"
+        "mainControl subList subList"
+        ". subList subList";
+    row-gap: 1rem;
+    column-gap: 2rem;
+}
+
+#intro {
+    position: absolute;
+    left: 10vw;
+    right: 10vw;
+    top: 30vh;
+    display: flex;
+    justify-content: center;
+}
+
+#introFirst {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    color: rgb(128, 128, 128);
+    text-align: center;
+}
+
+#introFirst::first-line {
+    color: rgb(250, 203, 14);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#dataSWAPI {
+    grid-area: mainList;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+#dataSWAPInav {
+    grid-area: mainControl;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.dataSWAPIitemsInstruction {
+    color: rgb(128, 128, 128);
+}
+
+.toggle-link {
+    padding: 0.5rem 1rem;
+    margin: 0;
+    background: rgb(250, 203, 14);
+    border-radius: 1.875rem;
+    color: black;
+    text-decoration: none;
+}
+
+/* ---------- MAIN BODY - Hover ---------- */
+
+.dataSWAPIitems:after{
+	content: "";
+	position: relative;
+	width: 0; 
+	height: 2px;
+	display: block;
+	margin-top: 5px;
+	right: 0;
+	background: black;
+	transition: width .2s ease;
+}
+
+.dataSWAPIitems:hover:after{
+	width: 5rem;
+	left: 0;
+	background: black;
+}
+
+/* ---------- SUB DATA ---------- */
+
+#subdataSWAPI {
+    grid-area: subList;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-content: start;
+    align-items: center;
+}
+
+.subdataHeadings {
+    text-transform: capitalize;
+}
+
+.subdataParagraph {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(128, 128, 128);
+    text-transform: capitalize;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    justify-items: center;
+    font-size: 1.5rem;
+    width: 100vw;
+    height: 10vh;
+    position: static;
+    bottom: 0;
+    align-items: center;
+    background: rgb(128, 128, 128);
+}
