@@ -4,6 +4,11 @@
 
 This project offer to the user a graphic environment where would be able to navigate through Star Wars saga general information. This information is requested from [SWAPI.DEV](https://swapi.dev/) API in Json format and you can get information such the different films that compound the saga, characters, planets, species, starships and vehicles. Also can get more detailed information of each one. 
 
+## Demo 
+
+- Personal Website
+[EDGARINFO.COM](https://edgarinfo.com/)
+
 ## How to navigate from the GUI?
 
 - Clone and pull this repository in your local repository
