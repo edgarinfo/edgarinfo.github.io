@@ -11,10 +11,10 @@ This project offer to the user a graphic environment where would be able to navi
 
 ## How to navigate from the GUI?
 
-- Clone and pull this repository in your local repository
-- Run from your IDE preference software 
-- You would see the welcome brief message
-- Clicking any of the button from the navigation bar, would drop down a list of element and you can navigate through those elements with the "previews page" and "next page" button below
+- Clone and pull this repository in your local repository.
+- Run from your IDE preference software.
+- You would see the welcome brief message.
+- Clicking any of the button from the navigation bar, would drop down a list of element and you can navigate through those elements with the "previews page" and "next page" button below.
 - Clicking in any of the element list, would bring you detailed information about the clicked element if applicable such name, title, films where appear the elements, opening crawl, eyes color and so on. 
 
 ## How its work?
@@ -24,6 +24,10 @@ This project request information from SWAPI.DEV throwing a Fetch API request tha
 ## How its build?
 
 Build using HTML that give structure and contain to the GUI. Stylized with CSS structure and the different function are controlled by JavaScript.
+
+## Contacts
+
+E-mail: [edgar13ruiz@hotmail.com](edgar13ruiz@hotmail.com)
 
 ## Rights
 
