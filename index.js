@@ -53,7 +53,7 @@ let keyValue = [
 
 navBar.addEventListener("click", navListener);
 mainControl.addEventListener("click", maincontrolListener);
-mainBody.addEventListener("click", bodyListener)
+mainBody.addEventListener("click", bodyListener);
 
 
 //-------------------------
@@ -140,7 +140,7 @@ function mainBodyItems(responseJson) {
         let innerValue = items.name || items.title;
         return '<a class="dataSWAPIitems">' + innerValue + '</a><br>'}).join('');
     mainBody.innerHTML = '<p class="dataSWAPIitemsInstruction">Click below for more details</p><br>' + mainBodyHTML;
-    controlToggle(responseJson)
+    controlToggle(responseJson);
 }
 
 
@@ -155,4 +155,3 @@ function controlToggle(data) {
         mainControl.innerHTML =  '';
     }
 }
-
